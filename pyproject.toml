@@ -1,0 +1,25 @@
+[project]
+version = "0.0.0"
+name = "git-clean"
+description = "A tool to clean git repositories"
+requires-python = ">=3.9"
+readme = "README.md"
+license = { text = "Apache License (2.0)" }
+authors = [{ name = "Maxim Voloshin", email = "mvolloshin@gmail.com" }]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+]
+
+dependencies = ["verbm"]
+
+[project.urls]
+Homepage = "https://github.com/chocolacula/git-clean"
+
+[project.scripts]
+git-clean = "git_clean.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

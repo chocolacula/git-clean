@@ -1,0 +1,9 @@
+annotated-types==0.7.0
+mypy==1.15.0
+mypy-extensions==1.0.0
+pydantic==2.11.2
+pydantic_core==2.33.1
+PyYAML==6.0.2
+typing-inspection==0.4.0
+typing_extensions==4.13.1
+verbm==1.0.0

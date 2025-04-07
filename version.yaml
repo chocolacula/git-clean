@@ -1,0 +1,19 @@
+version: 0.0.0
+
+template: "$major.$minor.$patch"
+
+source:
+  - file: ./src/git_clean_local/__main__.py
+    template: VERSION = "$version"
+  - file: ./pyproject.toml
+    template: version = "$version"
+
+commit:
+  username: Service Bot
+  email: service_user_trading@pepperstone.com
+  default: false
+  message: "Version bumped from $version to $new_version"
+
+tag:
+  default: false
+  message: "v$new_version"
